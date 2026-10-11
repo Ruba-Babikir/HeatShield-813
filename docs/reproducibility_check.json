@@ -1,0 +1,17 @@
+{
+  "historical_analysis_verification": {
+    "commit": "b13f16d49053f74336361013f3e74162285ef036",
+    "workflow_run_url": "https://github.com/Ruba-Babikir/UrbanCool-AI-Space-Hackathon/actions/runs/38151427128",
+    "clean_install": "success",
+    "fresh_jupyter_kernel": "success",
+    "submission_file_checks": "success",
+    "runner": "ubuntu-latest",
+    "python": "3.12",
+    "notebook": "notebooks/02_main_analysis.ipynb"
+  },
+  "new_repository_verification": {
+    "status": "pending upload and workflow execution",
+    "workflow": ".github/workflows/reproduce.yml"
+  },
+  "scope": "Analysis code and numerical inputs are unchanged. Documentation and workflow repository references are adapted for a new history-free repository."
+}

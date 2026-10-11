@@ -1,0 +1,5 @@
+fold,train_n,test_n,minimum_training_distance_m
+1,50,30,300.0
+2,30,30,300.0
+3,40,20,300.0
+4,60,20,300.0

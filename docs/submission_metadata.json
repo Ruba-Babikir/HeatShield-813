@@ -1,0 +1,36 @@
+{
+  "project": "HeatShield 813",
+  "registered_team_name": "UrbanCool AI",
+  "official_theme": "Urban Expansion, Land Use Change & Heat Risk",
+  "country_represented": "United Arab Emirates",
+  "members_and_roles": [
+    {
+      "name": "Nyar Adil Babiker Abdelrahman",
+      "role": "Team lead and co-developer"
+    },
+    {
+      "name": "Shahd Ehab Abdulmalek Eshaq",
+      "role": "Co-developer"
+    },
+    {
+      "name": "Nour Alhoda Abdulrahman Alahmed",
+      "role": "Co-developer"
+    },
+    {
+      "name": "Yosra Ghneem",
+      "role": "Co-developer"
+    },
+    {
+      "name": "Ruba Babikir Ali Mohamed",
+      "role": "Co-developer"
+    }
+  ],
+  "team_creator_timezone": null,
+  "code_licence": null,
+  "contribution_statement": "All five members developed the project collaboratively.",
+  "restricted_boundary_publication_permission": false,
+  "restricted_boundary_included_in_current_files": false,
+  "migration_status": "Published as a new repository without the earlier history; new workflow verification pending",
+  "repository_url": "https://github.com/Ruba-Babikir/HeatShield-813",
+  "previous_repository_visibility": "private"
+}

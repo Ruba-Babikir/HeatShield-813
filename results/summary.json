@@ -1,0 +1,50 @@
+{
+  "window_area_km2": 1.0,
+  "cell_size_m": 100,
+  "cells": 100,
+  "usable_heat_cells": 100,
+  "observation_date": "2026-06-11",
+  "mean_lst_c": 54.361104812622074,
+  "min_lst_c": 53.04318237304688,
+  "max_lst_c": 55.95984649658203,
+  "priority_counts": {
+    "Lower": 75,
+    "Medium": 15,
+    "Higher": 10
+  },
+  "validation": [
+    {
+      "model": "Mean baseline",
+      "folds": 4,
+      "test_cells": 100,
+      "MAE_mean_C": 0.8173195698,
+      "MAE_min_C": 0.4331430138,
+      "MAE_max_C": 1.1116557121,
+      "RMSE_mean_C": 0.9343522531,
+      "R2_mean": -2.8209938129
+    },
+    {
+      "model": "Linear regression",
+      "folds": 4,
+      "test_cells": 100,
+      "MAE_mean_C": 0.9661352441,
+      "MAE_min_C": 0.7286643572,
+      "MAE_max_C": 1.1626919692,
+      "RMSE_mean_C": 1.1832645564,
+      "R2_mean": -4.6858261309
+    },
+    {
+      "model": "Random forest",
+      "folds": 4,
+      "test_cells": 100,
+      "MAE_mean_C": 0.7464790506,
+      "MAE_min_C": 0.5007693073,
+      "MAE_max_C": 0.976631765,
+      "RMSE_mean_C": 0.8781184246,
+      "R2_mean": -2.2654724202
+    }
+  ],
+  "persistence_established": false,
+  "temporal_validation": "unavailable: one date",
+  "administrative_sector_boundary_used": false
+}

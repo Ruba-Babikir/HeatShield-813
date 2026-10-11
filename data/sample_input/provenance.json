@@ -1,0 +1,104 @@
+{
+  "project": "HeatShield 813",
+  "sample_type": "Prepared calibrated satellite cell means, not raw digital numbers or model predictions",
+  "aoi": {
+    "name": "Independent Mussafah sample window",
+    "crs": "EPSG:32640",
+    "bounds_m": [
+      245800,
+      2696300,
+      246800,
+      2697300
+    ],
+    "cell_size_m": 100,
+    "grid_shape": [
+      10,
+      10
+    ],
+    "administrative_boundary": false,
+    "selection": "Fixed rectangular subset of the team-prepared sample. This window is not representative of all M11-M12 and is not an official sector boundary."
+  },
+  "source_file": "Team export: outputs/section7/all_temperature_surface_observations.csv",
+  "source_sha256": "160b048f7bed70f6ac762a5e87c7130268a169b9b84a6784ce8f94bb64a978a6",
+  "sample_sha256": "84eeb590661e9787466e9af323acd6d6325e63f6eddc6dd17b764d1a9ea052d0",
+  "landsat": {
+    "provider": "USGS/NASA",
+    "product": "Landsat 8 Collection 2 Level-2 surface temperature",
+    "scene_id": "LC08_L2SP_161043_20260611_02_T1",
+    "acquisition_utc": "2026-06-11T06:51:50.495788+00:00",
+    "licence": "US public domain; acknowledge USGS",
+    "licence_url": "https://www.usgs.gov/faqs/are-there-any-restrictions-use-or-redistribution-landsat-data"
+  },
+  "sentinel": {
+    "provider": "Copernicus/ESA",
+    "product": "Sentinel-2B Level-2A surface reflectance",
+    "scene_id": "S2B_MSIL2A_20260611T064619_R020_T40QBM_20260611T104324",
+    "acquisition_utc": "2026-06-11T06:46:19.024000+00:00",
+    "licence": "Copernicus Sentinel free, full and open data terms",
+    "attribution": "Contains modified Copernicus Sentinel data (2026)",
+    "licence_url": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice"
+  },
+  "preparation": {
+    "landsat_id": "LC08_L2SP_161043_20260611_02_T1",
+    "landsat_date": "2026-06-11T06:51:50.495788+00:00",
+    "sentinel_id": "S2B_MSIL2A_20260611T064619_R020_T40QBM_20260611T104324",
+    "sentinel_date": "2026-06-11T06:46:19.024000+00:00",
+    "crs": "EPSG:32640",
+    "cell_size_m": 100,
+    "landsat_units": "degrees Celsius",
+    "landsat_conversion": "DN * 0.00341802 + 149.0 - 273.15",
+    "sentinel_units": "dimensionless surface reflectance",
+    "sentinel_band_order": [
+      "B02",
+      "B03",
+      "B04",
+      "B08",
+      "B11",
+      "B12"
+    ],
+    "sentinel_calibration": {
+      "B02": [
+        0.0001,
+        -0.1
+      ],
+      "B03": [
+        0.0001,
+        -0.1
+      ],
+      "B04": [
+        0.0001,
+        -0.1
+      ],
+      "B08": [
+        0.0001,
+        -0.1
+      ],
+      "B11": [
+        0.0001,
+        -0.1
+      ],
+      "B12": [
+        0.0001,
+        -0.1
+      ]
+    },
+    "calibration_source": "Selected product XML",
+    "quality_rules": {
+      "landsat": "QA_PIXEL bits 0\u20135 clear; QA_RADSAT=0; valid temperature; uncertainty between 0 and 2 K",
+      "sentinel": "SCL classes 4, 5, 6; valid nonzero stored measurements"
+    },
+    "resampling": "Average after masking; nearest for quality labels",
+    "minimum_valid_fraction": 1.0,
+    "coverage": {
+      "core_grid_cells_pct": 83.08457711442786,
+      "context_grid_cells_pct": 80.17241379310344
+    },
+    "coverage_definition": "Percentage of target cells with centres inside each boundary"
+  },
+  "excluded_inputs": [
+    "Abu Dhabi SDI administrative boundary polygons and sector membership",
+    "WorldCover classes",
+    "Hyperspectral imagery"
+  ],
+  "reproduction_scope": "Offline analysis from prepared calibrated cell values. Downloading and preprocessing the original scenes is outside this sample notebook."
+}
