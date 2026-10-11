@@ -10,7 +10,7 @@
 - The offline notebook uses relative paths and seed 42, with no credentials.
 - Actual outputs, one-date limits and the independent study-window scope are explicit.
 
-- Before migration, clean installation and fresh **Jupyter kernel** execution passed for the unchanged analysis. The new repository workflow must pass separately after upload.
+- Clean installation, fresh **Jupyter kernel** execution, repository file checks and anonymous access passed in [this repository’s workflow](https://github.com/Ruba-Babikir/HeatShield-813/actions/runs/38159150205) on commit `49959c8`.
 - A PDF slide deck is committed in `docs/slides.pdf`. Its title slide states the registered team, country and official theme. A team appendix lists all five members and their shared development roles.
 
 - Registered team: UrbanCool AI. Country: United Arab Emirates. Official theme: Urban Expansion, Land Use Change & Heat Risk.
@@ -21,7 +21,7 @@
 ## Checks still requiring evidence or team input
 
 - Team-selected code licence.
-- Open the new submitted repository URL in a logged-out browser. Confirm its own anonymous-access and notebook workflow succeeds after upload.
+- Open the exact repository URL entered in the submission form in a logged-out browser for the final visual check. Automated anonymous HTTP access already passed.
 - Attach the updated PDF to the submission form.
 - Complete project page and registration/eligibility of every member.
 - Correct repository URL entered in the form, acknowledgement of the requirements and no opt-out of judging.

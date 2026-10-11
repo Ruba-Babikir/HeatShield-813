@@ -1,17 +1,13 @@
 {
-  "historical_analysis_verification": {
-    "commit": "b13f16d49053f74336361013f3e74162285ef036",
-    "workflow_run_url": "https://github.com/Ruba-Babikir/UrbanCool-AI-Space-Hackathon/actions/runs/38151427128",
-    "clean_install": "success",
-    "fresh_jupyter_kernel": "success",
-    "submission_file_checks": "success",
-    "runner": "ubuntu-latest",
-    "python": "3.12",
-    "notebook": "notebooks/02_main_analysis.ipynb"
-  },
-  "new_repository_verification": {
-    "status": "pending upload and workflow execution",
-    "workflow": ".github/workflows/reproduce.yml"
-  },
-  "scope": "Analysis code and numerical inputs are unchanged. Documentation and workflow repository references are adapted for a new history-free repository."
+  "repository": "Ruba-Babikir/HeatShield-813",
+  "commit": "49959c8d13d5635d91feddab3e754d0fdd9f8ad0",
+  "workflow_run_url": "https://github.com/Ruba-Babikir/HeatShield-813/actions/runs/38159150205",
+  "clean_install": "success",
+  "fresh_jupyter_kernel": "success",
+  "submission_file_checks": "success",
+  "anonymous_repository_access": "success",
+  "runner": "ubuntu-latest",
+  "python": "3.12",
+  "notebook": "notebooks/02_main_analysis.ipynb",
+  "scope": "Clean dependency installation and complete notebook execution using the committed prepared sample. This does not validate raw-scene preprocessing, scientific generalisation or platform eligibility."
 }

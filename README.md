@@ -88,7 +88,7 @@ For plain-Python execution of exactly the same code cells:
 python scripts/run_notebook.py
 ```
 
-The latter runner is a fresh Python process, not a Jupyter kernel. It preserves the outputs it actually produces. The GitHub `Reproduce notebook` workflow performs the separate Jupyter-kernel check and uploads its executed notebook and results. The same analysis passed a clean installation and fresh-kernel run in the earlier repository. The new repository workflow is pending verification; see `docs/reproducibility_check.json` for the distinction.
+The latter runner is a fresh Python process, not a Jupyter kernel. It preserves the outputs it actually produces. The GitHub `Reproduce notebook` workflow performs the separate Jupyter-kernel check and uploads its executed notebook and results. The [clean installation and fresh-kernel run](https://github.com/Ruba-Babikir/HeatShield-813/actions/runs/38159150205) passed in this repository for commit `49959c8`. Its anonymous-access check also passed. See `docs/reproducibility_check.json` for the verification record.
 
 The notebook reads `data/sample_input/satellite_cells.csv` and writes to `results/`. The root-level `UrbanCool_AI_Space_Hackathon.ipynb` is an identical convenience copy of the main notebook. Run only one copy.
 
@@ -126,7 +126,7 @@ Limitations:
 - Site-use, vulnerability, water availability, engineering feasibility and cost are not modelled.
 - Independent ground observations and an authorised boundary are still needed for a full operational pilot.
 
-Verification: all nine code cells ran in order locally. Before migration, a separate GitHub Actions run successfully installed the pinned dependencies on a clean Ubuntu runner, executed all cells in a fresh Jupyter kernel, passed the repository checks and uploaded the executed notebook and results. This is historical evidence for the unchanged analysis, not evidence that the new repository has passed. Check the new repository workflow after upload.
+Verification: all nine code cells ran in order locally. A [GitHub Actions run in this repository](https://github.com/Ruba-Babikir/HeatShield-813/actions/runs/38159150205) on commit `49959c8` successfully installed the pinned dependencies on a clean Ubuntu runner, executed all cells in a fresh Jupyter kernel, passed the repository file checks and uploaded the executed notebook and results. Anonymous access to the public repository also passed. These checks establish reproducibility of the supplied sample, not scientific or competition eligibility.
 
 ## 10. Team, licence and attribution
 

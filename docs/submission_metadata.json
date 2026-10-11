@@ -30,7 +30,8 @@
   "contribution_statement": "All five members developed the project collaboratively.",
   "restricted_boundary_publication_permission": false,
   "restricted_boundary_included_in_current_files": false,
-  "migration_status": "Published as a new repository without the earlier history; new workflow verification pending",
+  "migration_status": "Published in a new repository without the earlier history; anonymous access and fresh-kernel workflow verified",
   "repository_url": "https://github.com/Ruba-Babikir/HeatShield-813",
-  "previous_repository_visibility": "private"
+  "previous_repository_visibility": "private",
+  "verification_run_url": "https://github.com/Ruba-Babikir/HeatShield-813/actions/runs/38159150205"
 }
